@@ -11,7 +11,7 @@ Hope you enjoy the solutions and if you want to add your solution doesn't hesita
 Go to the folder of the exercise you want to resolve and create a class that implements the interface:
 
 ```csharp
-namespace HackerRank.InterviewPreparationKit.Arrays.TwoDArrayDS.Implementations
+namespace HackerRank.DataStructures.Arrays.TwoDArrayDS.Implementations
 {
     public class TwoDArrayDSOuro17 : ITwoDArrayDS
     {

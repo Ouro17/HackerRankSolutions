@@ -1,8 +1,8 @@
-﻿using HackerRank.InterviewPreparationKit.Arrays.TwoDArrayDS.Implementations;
+﻿using HackerRank.DataStructures.Arrays.TwoDArrayDS.Implementations;
 using HackerRank.Utils;
 using System;
 
-namespace HackerRank.InterviewPreparationKit.Arrays.TwoDArrayDS
+namespace HackerRank.DataStructures.Arrays.TwoDArrayDS
 {
     public class TwoDArrayDSFactory : IFactory<TwoDArrayDSAuthors, ITwoDArrayDS>
     {

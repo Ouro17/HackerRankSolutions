@@ -1,7 +1,7 @@
-using HackerRank.InterviewPreparationKit.Arrays.TwoDArrayDS;
+using HackerRank.DataStructures.Arrays.TwoDArrayDS;
 using Xunit;
 
-namespace HackerRankTests.InterviewPreparationKit.Arrays.TwoDArrayDS
+namespace HackerRankTests.DataStructures.Arrays.TwoDArrayDS
 {
     public class TwoDArrayDSTest
     {

@@ -1,7 +1,7 @@
 ﻿namespace HackerRank.Algorithms.RepeatedString
 {
     /*
-     * @url https://www.hackerrank.com/challenges/repeated-string/
+     * @url https://www.hackerrank.com/challenges/repeated-string
      */
     public interface IRepeatedString
     {

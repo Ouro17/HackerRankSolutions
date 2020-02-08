@@ -1,4 +1,4 @@
-﻿namespace HackerRank.InterviewPreparationKit.Arrays.TwoDArrayDS
+﻿namespace HackerRank.DataStructures.Arrays.TwoDArrayDS
 {
     public enum TwoDArrayDSAuthors
     {

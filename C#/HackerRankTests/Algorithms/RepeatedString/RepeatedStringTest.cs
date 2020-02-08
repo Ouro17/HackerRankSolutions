@@ -7,7 +7,7 @@ namespace HackerRankTests.Algorithms.RepeatedString
     {
         [Theory]
         [ClassData(typeof(RepeatedStringTestImplementationEnumerator))]
-        public void HourglassSum_HappyPath_ReturnsMax(IRepeatedString impl, object[] data, long expectedResult)
+        public void RepeatedString_HappyPath_ReturnsExpectedResult(IRepeatedString impl, object[] data, long expectedResult)
         {
             Assert.Equal(expectedResult, impl.RepeatedString((string) data[0], (long) data[1]));
         }

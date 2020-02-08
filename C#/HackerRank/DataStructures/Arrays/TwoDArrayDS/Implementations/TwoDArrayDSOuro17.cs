@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace HackerRank.InterviewPreparationKit.Arrays.TwoDArrayDS.Implementations
+namespace HackerRank.DataStructures.Arrays.TwoDArrayDS.Implementations
 {
     public class TwoDArrayDSOuro17 : ITwoDArrayDS
     {
