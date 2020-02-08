@@ -20,7 +20,7 @@ namespace HackerRank.DataStructures.Arrays.TwoDArrayDS.Implementations
             // Your implementation here
         }
 
-        // Add as many method as you need
+        // Add as many methods as you need
     }
 }
 ```
