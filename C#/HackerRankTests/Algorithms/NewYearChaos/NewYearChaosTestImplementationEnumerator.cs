@@ -21,13 +21,37 @@ namespace HackerRankTests.Algorithms.NewYearChaos
                 {
                     2, 5, 1, 3, 4
                 }
-            }
+            },
+            new object[]
+            {
+                new int[]
+                {
+                    5, 1, 2, 3, 7, 8, 6, 4
+                }
+            },
+            new object[]
+            {
+                new int[]
+                {
+                    1, 2, 5, 3, 7, 8, 6, 4
+                }
+            },
+            new object[]
+            {
+                new int[]
+                {
+                    1, 2, 5, 3, 4, 7, 8, 6
+                }
+            },
         };
 
         private static readonly object[] results =
         {
             3,
-            "Too chaotic"
+            "Too chaotic",
+            "Too chaotic",
+            7,
+            4
         };
 
         public NewYearChaosTestImplementationEnumerator() : base(new NewYearChaosFactory(new TextWriterFactory()), data, results)

@@ -23,7 +23,6 @@ namespace HackerRank.Algorithms.NewYearChaos.Implementations
             while (!IsChaotic && i < q.Length)
             {
                 int current = q[i];
-                int next = ((i + 1) >= q.Length) ? q.Length + 1 : q[i + 1]; 
 
                 if ((current - i) > 3)
                 {
@@ -31,11 +30,7 @@ namespace HackerRank.Algorithms.NewYearChaos.Implementations
                 }
                 else
                 {
-                    if (current > next)
-                    {
-                        bribes++;
-                    }
-                    else if (current > (i + 1))
+                    if ((current - 1) <= i)
                     {
                         bribes++;
                     }
@@ -47,5 +42,15 @@ namespace HackerRank.Algorithms.NewYearChaos.Implementations
             // Replace TextWriter with Console if you want to test on the web.
             TextWriter.Write((IsChaotic) ? TooChaotic : bribes.ToString());
         }
+
+        // 1 2 3 4 5 6 7 8
+
+        // 1 2 3 4 5 7 6 8
+        // 1 2 3 5 4 7 6 8
+        // 1 2 3 5 7 4 6 8
+        // 1 2 3 5 7 4 8 6
+        // 1 2 3 5 7 8 4 6
+        // 1 2 3 5 7 8 6 4
+        // 1 2 5 3 7 8 6 4 <= check diff by 2??
     }
 }
