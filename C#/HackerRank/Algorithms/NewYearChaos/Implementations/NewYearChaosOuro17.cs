@@ -5,45 +5,48 @@ namespace HackerRank.Algorithms.NewYearChaos.Implementations
 {
     public class NewYearChaosOuro17 : INewYearChaos
     {
+        public TextWriter TextWriter { get; }
+
         public NewYearChaosOuro17(TextWriter textWriter)
         {
             TextWriter = textWriter;
         }
 
-        public TextWriter TextWriter { get; }
-
         public void MinimumBribes(int[] q)
         {
             const string TooChaotic = "Too chaotic";
-            bool IsChaotic = false;
-            int i = 0;
+            const int MaxBribes = 2;
 
             int bribes = 0;
 
-            while (!IsChaotic && i < (q.Length - 1))
-            {
-                int currentTicket = q[i];
-                int nextTicket = q[i + 1];
-                int currentPos = (i + 1);
+            bool isChaotic = false;
+            int i = q.Length - 1;
+            int current;
 
-                if ((currentTicket - i) > 3)
+            while (!isChaotic && i >= 0)
+            {
+                current = q[i];
+
+                if ((current - (i + 1)) > MaxBribes)
                 {
-                    IsChaotic = true;
+                    isChaotic = true;
                 }
                 else
                 {
-                    // 1, 2, 5, 3, 7, 8, 6, 4
-                    if (currentTicket > nextTicket)
+                    for (int j = Math.Max(0, current - MaxBribes); j < i; ++j)
                     {
-                        bribes += Math.Abs(currentTicket - currentPos);
+                        if (q[j] > current)
+                        {
+                            bribes++;
+                        }
                     }
 
-                    i++;
+                    --i;
                 }
             }
 
             // Replace TextWriter with Console.WriteLine if you want to test on the web.
-            TextWriter.Write(IsChaotic ? TooChaotic : bribes.ToString());
+            TextWriter.Write(isChaotic ? TooChaotic : bribes.ToString());
         }
     }
 }

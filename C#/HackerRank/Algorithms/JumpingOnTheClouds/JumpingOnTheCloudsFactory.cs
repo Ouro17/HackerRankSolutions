@@ -16,5 +16,14 @@ namespace HackerRank.Algorithms.JumpingOnTheClouds
                     throw new NotSupportedException();
             }
         }
+
+        public IJumpingOnTheClouds GetObject(JumpingOnTheCloudsAuthors type, object[] parameters)
+        {
+            switch (type)
+            {
+                default:
+                    throw new NotSupportedException();
+            }
+        }
     }
 }

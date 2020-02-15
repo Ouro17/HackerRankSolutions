@@ -16,5 +16,15 @@ namespace HackerRank.Algorithms.RepeatedString
                     throw new NotSupportedException();
             }
         }
+
+
+        public IRepeatedString GetObject(RepeatedStringAuthors type, object[] parameters)
+        {
+            switch (type)
+            {
+                default:
+                    throw new NotSupportedException();
+            }
+        }
     }
 }

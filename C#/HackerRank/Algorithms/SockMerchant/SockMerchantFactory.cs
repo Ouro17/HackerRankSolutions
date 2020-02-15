@@ -16,5 +16,14 @@ namespace HackerRank.Algorithms.SockMerchant
                     throw new NotSupportedException();
             }
         }
+
+        public ISockMerchant GetObject(SockMerchantAuthors type, object[] parameters)
+        {
+            switch (type)
+            {
+                default:
+                    throw new NotSupportedException();
+            }
+        }
     }
 }

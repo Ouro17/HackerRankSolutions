@@ -16,5 +16,14 @@ namespace HackerRank.DataStructures.Arrays.TwoDArrayDS
                     throw new NotSupportedException();
             }
         }
+
+        public ITwoDArrayDS GetObject(TwoDArrayDSAuthors type, object[] parameters)
+        {
+            switch (type)
+            {
+                default:
+                    throw new NotSupportedException();
+            }
+        }
     }
 }

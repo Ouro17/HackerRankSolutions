@@ -18,7 +18,7 @@ namespace HackerRankTests.Utils
             _testResults = testResults;
         }
 
-        public IEnumerator<object[]> GetEnumerator()
+        public virtual IEnumerator<object[]> GetEnumerator()
         {
             foreach (TEnum e in EnumUtil.GetValues<TEnum>())
             {

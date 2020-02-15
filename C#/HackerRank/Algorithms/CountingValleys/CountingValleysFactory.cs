@@ -16,5 +16,14 @@ namespace HackerRank.Algorithms.CountingValleys
                     throw new NotSupportedException();
             }
         }
+
+        public ICountingValleys GetObject(CountingValleysAuthors type, object[] parameters)
+        {
+            switch (type)
+            {
+                default:
+                    throw new NotSupportedException();
+            }
+        }
     }
 }
